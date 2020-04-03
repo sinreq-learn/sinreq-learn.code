@@ -1,6 +1,6 @@
 # Gradient-Based Deep Quantization of Neural Networks through Sinusoidal Adaptive Regularization
 
-![Image description]()
+![Image description](sinreq_learn.png)
 
 # Instructions
 
@@ -15,6 +15,8 @@ bitwidth regularization strength: lambda_f (for the second term in the proposed 
 **Notes:**
 SinReQ-Learn is implemented inside Distiller (Zmora et al., 2018), an open source framework for compression by Intel Nervana.
 https://github.com/NervanaSystems/distiller
+
+-- Work under review and  development --  
 
 # License
 
