@@ -1,6 +1,6 @@
 # Gradient-Based Deep Quantization of Neural Networks through Sinusoidal Adaptive Regularization
 
-![Image description](sinreq_learn.png)
+![Image description](code/sinreq_learn.png)
 
 # Instructions
 
