@@ -1,0 +1,16 @@
+kernel1 = model.module.conv1.weight
+kernel2 = model.module.fc2.weight
+kernel3 = model.module.fc2.weight
+kernel4 = model.module.fc2.weight
+kernel5 = model.module.fc3.weight
+
+w1 = kernel1.data.cpu().numpy()
+w2 = kernel2.data.cpu().numpy()
+w3 = kernel3.data.cpu().numpy()
+w4 = kernel4.data.cpu().numpy()
+w5 = kernel5.data.cpu().numpy()
+np.save('weights_sin2Reg/cifar10_L1_weights'+str(last_epoch), w1)
+np.save('weights_sin2Reg/cifar10_L2_weights'+str(last_epoch), w2)
+np.save('weights_sin2Reg/cifar10_L3_weights'+str(last_epoch), w3)
+np.save('weights_sin2Reg/cifar10_L4_weights'+str(last_epoch), w4)
+np.save('weights_sin2Reg/cifar10_L5_weights'+str(last_epoch), w5)

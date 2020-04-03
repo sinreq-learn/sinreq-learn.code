@@ -1,0 +1,51 @@
+lr_schedulers:
+  training_lr:
+    class: MultiStepLR
+    gamma: 0.2
+    milestones:
+    - 60
+    - 75
+policies:
+- ending_epoch: 400
+  frequency: 1
+  quantizer:
+    instance_name: dorefa_quantizer
+  starting_epoch: 0
+- ending_epoch: 400
+  frequency: 1
+  lr_scheduler:
+    instance_name: training_lr
+  starting_epoch: 0
+quantizers:
+  dorefa_quantizer:
+    bits_activations: null
+    bits_overrides:
+      features.0:
+        acts: null
+        wts: 8
+      features.4:
+        acts: null
+        wts: 2
+      features.8:
+        acts: null
+        wts: 2
+      features.11:
+        acts: null
+        wts: 2
+      features.15:
+        acts: null
+        wts: 2
+      features.18:
+        acts: null
+        wts: 2
+      features.22:
+        acts: null
+        wts: 2
+      features.25:
+        acts: null
+        wts: 2
+      classifier:
+        acts: null
+        wts: 8
+    bits_weights: 8
+    class: DorefaQuantizer
