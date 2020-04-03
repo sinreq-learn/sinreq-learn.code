@@ -7,6 +7,7 @@
 **Example Usage:**
 
 $ cd code/examples/classifier_compression
+
 $ python3 compress_classifier_sinreq-Learn_cifar10.py --arch simplenet_cifar ../../../data.cifar --epochs 1000 --lr 0.005
 
 **Hyperparameters:**
@@ -17,6 +18,7 @@ bitwidth regularization strength: lambda_f (for the second term in the proposed 
 **Notes:**
 
 SinReQ-Learn is implemented inside Distiller (Zmora et al., 2018), an open source framework for compression by Intel Nervana.
+
 https://github.com/NervanaSystems/distiller
 
 -- Work under review and  development --  
